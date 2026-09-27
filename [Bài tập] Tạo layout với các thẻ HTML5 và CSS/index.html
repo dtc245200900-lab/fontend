@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout HTML5</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Khung chính */
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            height: 100px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            line-height: 60px;
+        }
+
+        /* Navigation */
+        nav {
+            height: 45px;
+            background-color: #333;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 13px 25px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Khu vực nội dung */
+        main {
+            display: flex;
+            gap: 5px;
+            margin-top: 5px;
+        }
+
+        /* Section */
+        section {
+            width: 70%;
+            min-height: 450px;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        /* Article */
+        article {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+        }
+
+        article h2 {
+            margin-top: 0;
+        }
+
+        /* Aside */
+        aside {
+            width: 30%;
+            min-height: 450px;
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        aside h3 {
+            margin-top: 0;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            height: 70px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Phần đầu trang -->
+    <header>
+        <h1>Website của tôi</h1>
+    </header>
+
+    <!-- Thanh điều hướng -->
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Khóa học</a>
+        <a href="#">Tin tức</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+
+    <!-- Nội dung chính -->
+    <main>
+
+        <!-- Khu vực nội dung -->
+        <section>
+
+            <article>
+                <h2>Hot News</h2>
+                <p>
+                    Chào mừng bạn đến với website của chúng tôi.
+                    Đây là khu vực hiển thị các tin tức mới nhất.
+                </p>
+            </article>
+
+            <article>
+                <h2>Photo Slide</h2>
+                <p>
+                    Khu vực này có thể sử dụng để hiển thị hình ảnh
+                    hoặc các nội dung nổi bật.
+                </p>
+            </article>
+
+            <article>
+                <h2>News</h2>
+                <p>
+                    Đây là nội dung của bài viết hoặc tin tức trên
+                    website.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Thanh bên -->
+        <aside>
+            <h3>Thông tin</h3>
+
+            <ul>
+                <li>Lịch học</li>
+                <li>Thông báo</li>
+                <li>Thống kê</li>
+                <li>Bản đồ</li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- Cuối trang -->
+    <footer>
+        © 2026 - Website của tôi
+    </footer>
+
+</div>
+
+</body>
+</html>
