@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-column {
+    width: 60%;
+    float: left;
+    background-color: lightblue;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-column {
+    width: 38%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Xử lý float */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
