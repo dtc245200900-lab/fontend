@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách trong CSS</title>
+
+    <style>
+        /* Danh sách không có thứ tự */
+        .disc-list {
+            list-style-type: disc;
+        }
+
+        .circle-list {
+            list-style-type: circle;
+        }
+
+        .square-list {
+            list-style-type: square;
+        }
+
+        /* Danh sách có thứ tự */
+        .decimal-list {
+            list-style-type: decimal;
+        }
+
+        .upper-alpha-list {
+            list-style-type: upper-alpha;
+        }
+
+        .lower-roman-list {
+            list-style-type: lower-roman;
+        }
+
+        /* Vị trí đánh dấu */
+        .inside-list {
+            list-style-position: inside;
+        }
+
+        .outside-list {
+            list-style-position: outside;
+        }
+
+        /* Danh sách có màu sắc */
+        .color-list {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .color-list li {
+            color: green;
+            margin: 8px;
+        }
+
+        /* Thuộc tính rút gọn */
+        .short-list {
+            list-style: square inside;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Danh sách trong CSS</h1>
+
+    <h2>1. Danh sách không có thứ tự</h2>
+
+    <h3>Disc</h3>
+    <ul class="disc-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h3>Circle</h3>
+    <ul class="circle-list">
+        <li>Java</li>
+        <li>Python</li>
+        <li>C++</li>
+    </ul>
+
+    <h3>Square</h3>
+    <ul class="square-list">
+        <li>MySQL</li>
+        <li>SQL Server</li>
+        <li>MongoDB</li>
+    </ul>
+
+
+    <h2>2. Danh sách có thứ tự</h2>
+
+    <h3>Số thứ tự</h3>
+    <ol class="decimal-list">
+        <li>Học HTML</li>
+        <li>Học CSS</li>
+        <li>Học JavaScript</li>
+    </ol>
+
+    <h3>Chữ cái in hoa</h3>
+    <ol class="upper-alpha-list">
+        <li>Frontend</li>
+        <li>Backend</li>
+        <li>Database</li>
+    </ol>
+
+    <h3>Số La Mã</h3>
+    <ol class="lower-roman-list">
+        <li>Thiết kế giao diện</li>
+        <li>Lập trình chức năng</li>
+        <li>Kết nối cơ sở dữ liệu</li>
+    </ol>
+
+
+    <h2>3. Vị trí đánh dấu</h2>
+
+    <h3>Inside</h3>
+    <ul class="inside-list">
+        <li>HTML là ngôn ngữ đánh dấu.</li>
+        <li>CSS dùng để định dạng giao diện.</li>
+        <li>JavaScript tạo tính tương tác.</li>
+    </ul>
+
+    <h3>Outside</h3>
+    <ul class="outside-list">
+        <li>Thiết kế website.</li>
+        <li>Phát triển ứng dụng.</li>
+        <li>Kiểm thử website.</li>
+    </ul>
+
+
+    <h2>4. Danh sách có màu sắc</h2>
+
+    <ul class="color-list">
+        <li>Thiết kế web</li>
+        <li>Lập trình web</li>
+        <li>Phát triển phần mềm</li>
+    </ul>
+
+
+    <h2>5. Thuộc tính list-style rút gọn</h2>
+
+    <ul class="short-list">
+        <li>Sản phẩm</li>
+        <li>Khách hàng</li>
+        <li>Đơn hàng</li>
+    </ul>
+
+</body>
+</html>
