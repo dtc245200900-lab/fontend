@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Columns</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        /* Ví dụ 1: Chia thành 3 cột */
+        .grid1 {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            gap: 10px;
+        }
+
+        /* Ví dụ 2: Chia cột theo tỷ lệ */
+        .grid2 {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 10px;
+        }
+
+        .box {
+            background-color: lightblue;
+            border: 1px solid #333;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Ví dụ 3: Sử dụng auto */
+        .grid3 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+        }
+
+        /* Ví dụ 4: Sử dụng min-content và max-content */
+        .grid4 {
+            display: grid;
+            grid-template-columns: min-content max-content 1fr;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Grid - grid-template-columns</h1>
+
+    <h2>Ví dụ 1: Kích thước cố định</h2>
+
+    <div class="grid1">
+        <div class="box">Cột 1</div>
+        <div class="box">Cột 2</div>
+        <div class="box">Cột 3</div>
+        <div class="box">Cột 4</div>
+        <div class="box">Cột 5</div>
+        <div class="box">Cột 6</div>
+    </div>
+
+
+    <h2>Ví dụ 2: Chia theo tỷ lệ</h2>
+
+    <div class="grid2">
+        <div class="box">Cột 1</div>
+        <div class="box">Cột 2</div>
+        <div class="box">Cột 3</div>
+        <div class="box">Cột 4</div>
+        <div class="box">Cột 5</div>
+        <div class="box">Cột 6</div>
+    </div>
+
+
+    <h2>Ví dụ 3: Sử dụng auto</h2>
+
+    <div class="grid3">
+        <div class="box">Cột 1</div>
+        <div class="box">Cột 2</div>
+        <div class="box">Cột 3</div>
+    </div>
+
+
+    <h2>Ví dụ 4: min-content và max-content</h2>
+
+    <div class="grid4">
+        <div class="box">Min</div>
+        <div class="box">Nội dung lớn nhất</div>
+        <div class="box">Cột còn lại</div>
+    </div>
+
+</body>
+</html>
