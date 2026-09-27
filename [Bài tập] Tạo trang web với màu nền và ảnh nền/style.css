@@ -1,0 +1,43 @@
+/* Màu nền cho toàn bộ trang */
+body {
+    background-color: #eaf6ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Tiêu đề */
+h1 {
+    color: #1565c0;
+}
+
+/* Đoạn văn */
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Khối nội dung có ảnh nền */
+.content {
+    width: 70%;
+    min-height: 250px;
+
+    margin: 30px auto;
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+
+    /* Căn giữa nội dung */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    border-radius: 10px;
+}
