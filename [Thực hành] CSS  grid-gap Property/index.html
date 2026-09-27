@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Gap</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        /* Ví dụ 1 */
+        .grid1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            max-width: 800px;
+            margin-bottom: 50px;
+        }
+
+        /* Ví dụ 2 */
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            /* 30px khoảng cách hàng
+               10px khoảng cách cột */
+            grid-gap: 30px 10px;
+
+            max-width: 800px;
+        }
+
+        .box {
+            background-color: lightblue;
+            border: 1px solid #333;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Grid - grid-gap</h1>
+
+    <h2>Ví dụ 1: Khoảng cách giống nhau</h2>
+
+    <div class="grid1">
+        <div class="box">Ô 1</div>
+        <div class="box">Ô 2</div>
+        <div class="box">Ô 3</div>
+
+        <div class="box">Ô 4</div>
+        <div class="box">Ô 5</div>
+        <div class="box">Ô 6</div>
+
+        <div class="box">Ô 7</div>
+        <div class="box">Ô 8</div>
+        <div class="box">Ô 9</div>
+    </div>
+
+
+    <h2>Ví dụ 2: Khoảng cách hàng và cột khác nhau</h2>
+
+    <div class="grid2">
+        <div class="box">Ô 1</div>
+        <div class="box">Ô 2</div>
+        <div class="box">Ô 3</div>
+
+        <div class="box">Ô 4</div>
+        <div class="box">Ô 5</div>
+        <div class="box">Ô 6</div>
+
+        <div class="box">Ô 7</div>
+        <div class="box">Ô 8</div>
+        <div class="box">Ô 9</div>
+    </div>
+
+</body>
+</html>
