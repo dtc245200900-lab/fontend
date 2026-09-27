@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Wrap</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            width: 600px;
+            margin: 20px auto;
+            border: 2px solid #333;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .box {
+            width: 180px;
+            height: 80px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* nowrap */
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+
+        /* wrap */
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        /* wrap-reverse */
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        /* initial */
+        .initial {
+            flex-wrap: initial;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Flex-Wrap Property</h1>
+
+    <h2>1. flex-wrap: nowrap</h2>
+    <div class="container nowrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+
+    <h2>2. flex-wrap: wrap</h2>
+    <div class="container wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+
+    <h2>3. flex-wrap: wrap-reverse</h2>
+    <div class="container wrap-reverse">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+
+    <h2>4. flex-wrap: initial</h2>
+    <div class="container initial">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+
+</body>
+</html>
