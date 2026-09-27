@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Column Start</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 800px;
+        }
+
+        .box {
+            padding: 30px;
+            background-color: lightblue;
+            border: 1px solid #333;
+            text-align: center;
+        }
+
+        /* Ví dụ 1: auto */
+        .item1 {
+            grid-column-start: auto;
+        }
+
+        /* Ví dụ 2: bắt đầu từ cột số 2 */
+        .item2 {
+            grid-column-start: 2;
+        }
+
+        /* Ví dụ 3: bắt đầu từ cột số 3 */
+        .item3 {
+            grid-column-start: 3;
+        }
+
+        /* Ví dụ 4: span */
+        .item4 {
+            grid-column-start: span 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Grid - grid-column-start</h1>
+
+    <div class="grid">
+
+        <div class="box item1">
+            Item 1 - auto
+        </div>
+
+        <div class="box item2">
+            Item 2 - column 2
+        </div>
+
+        <div class="box item3">
+            Item 3 - column 3
+        </div>
+
+        <div class="box item4">
+            Item 4 - span 2
+        </div>
+
+        <div class="box">
+            Item 5
+        </div>
+
+        <div class="box">
+            Item 6
+        </div>
+
+    </div>
+
+</body>
+</html>
