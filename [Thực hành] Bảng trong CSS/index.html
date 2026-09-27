@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng trong CSS</title>
+
+    <style>
+        /* Định dạng chung cho bảng */
+        table {
+            width: 100%;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        /* Đường viền cho ô */
+        th,
+        td {
+            border: 1px solid black;
+            padding: 12px;
+        }
+
+        /* Chiều cao tiêu đề */
+        th {
+            height: 50px;
+        }
+
+        /* Căn giữa theo chiều ngang */
+        th {
+            text-align: center;
+        }
+
+        td {
+            text-align: left;
+        }
+
+        /* Căn chỉnh theo chiều dọc */
+        td {
+            vertical-align: middle;
+        }
+
+        /* Màu sắc cho tiêu đề */
+        th {
+            background-color: #2196f3;
+            color: white;
+        }
+
+        /* Màu nền xen kẽ cho các dòng */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Bảng danh sách sản phẩm</h1>
+
+    <table>
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Danh mục</th>
+        </tr>
+
+        <tr>
+            <td>Laptop</td>
+            <td>15.000.000 VNĐ</td>
+            <td>10</td>
+            <td>Điện tử</td>
+        </tr>
+
+        <tr>
+            <td>Điện thoại</td>
+            <td>8.000.000 VNĐ</td>
+            <td>20</td>
+            <td>Điện tử</td>
+        </tr>
+
+        <tr>
+            <td>Tai nghe</td>
+            <td>500.000 VNĐ</td>
+            <td>30</td>
+            <td>Phụ kiện</td>
+        </tr>
+
+        <tr>
+            <td>Bàn phím</td>
+            <td>700.000 VNĐ</td>
+            <td>15</td>
+            <td>Phụ kiện</td>
+        </tr>
+
+        <tr>
+            <td>Chuột máy tính</td>
+            <td>400.000 VNĐ</td>
+            <td>25</td>
+            <td>Phụ kiện</td>
+        </tr>
+    </table>
+
+</body>
+</html>
