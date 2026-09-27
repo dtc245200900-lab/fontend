@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Basis</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            width: 800px;
+            margin: 20px auto;
+            border: 2px solid #333;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .box {
+            height: 80px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Ví dụ 1: flex-basis bằng đơn vị độ dài */
+        .box1 {
+            flex-basis: 100px;
+        }
+
+        .box2 {
+            flex-basis: 200px;
+        }
+
+        .box3 {
+            flex-basis: 300px;
+        }
+
+        /* Ví dụ 2: các giá trị khác */
+        .auto {
+            flex-basis: auto;
+        }
+
+        .initial {
+            flex-basis: initial;
+        }
+
+        .inherit-parent {
+            flex-basis: 250px;
+        }
+
+        .inherit {
+            flex-basis: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS flex-basis Property</h1>
+
+    <h2>Ví dụ 1: flex-basis với kích thước cụ thể</h2>
+
+    <div class="container">
+        <div class="box box1">100px</div>
+        <div class="box box2">200px</div>
+        <div class="box box3">300px</div>
+    </div>
+
+    <h2>Ví dụ 2: auto, initial và inherit</h2>
+
+    <div class="container">
+        <div class="box auto">Auto</div>
+        <div class="box initial">Initial</div>
+        <div class="inherit-parent">
+            <div class="box inherit">Inherit</div>
+        </div>
+    </div>
+
+</body>
+</html>
