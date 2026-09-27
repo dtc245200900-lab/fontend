@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Flow</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            width: 700px;
+            margin: 20px auto;
+            border: 2px solid #333;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .box {
+            width: 150px;
+            height: 80px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* row nowrap */
+        .row-nowrap {
+            flex-flow: row nowrap;
+        }
+
+        /* row-reverse nowrap */
+        .row-reverse-nowrap {
+            flex-flow: row-reverse nowrap;
+        }
+
+        /* row wrap */
+        .row-wrap {
+            flex-flow: row wrap;
+        }
+
+        /* row-reverse wrap */
+        .row-reverse-wrap {
+            flex-flow: row-reverse wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS flex-flow Property</h1>
+
+    <h2>1. flex-flow: row nowrap</h2>
+
+    <div class="container row-nowrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+
+    <h2>2. flex-flow: row-reverse nowrap</h2>
+
+    <div class="container row-reverse-nowrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+
+    <h2>3. flex-flow: row wrap</h2>
+
+    <div class="container row-wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+
+    <h2>4. flex-flow: row-reverse wrap</h2>
+
+    <div class="container row-reverse-wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+
+</body>
+</html>
