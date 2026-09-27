@@ -1,0 +1,60 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+/* ID selector */
+#title {
+    text-align: center;
+    color: #2196f3;
+}
+
+/* Class selector */
+.description {
+    color: #555;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Element selector */
+li {
+    margin: 10px;
+    font-size: 17px;
+}
+
+/* Định dạng từng mục danh sách */
+.hobbies li:nth-child(1) {
+    color: red;
+}
+
+.hobbies li:nth-child(2) {
+    color: green;
+}
+
+.hobbies li:nth-child(3) {
+    color: blue;
+}
+
+/* Grouping selector */
+h1,
+h2 {
+    font-family: Arial, sans-serif;
+}
+
+/* ID selector cho button */
+#myButton {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Pseudo-class */
+#myButton:hover {
+    background-color: #0d47a1;
+}
