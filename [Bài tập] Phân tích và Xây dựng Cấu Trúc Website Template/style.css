@@ -1,0 +1,313 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    line-height: 1.6;
+
+    color: #333;
+
+    background: #f5f5f5;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: #2c3e50;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+
+.header h1 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+.header p {
+    font-size: 18px;
+
+    color: #ecf0f1;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    background: #1abc9c;
+
+    padding: 15px 0;
+}
+
+
+.navbar ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.navbar li a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+
+.navbar li a:hover {
+    background: #16a085;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 70px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background: white;
+}
+
+
+.content-text {
+    flex: 1;
+}
+
+
+.content-text h2 {
+    font-size: 32px;
+
+    color: #2c3e50;
+
+    margin-bottom: 20px;
+}
+
+
+.content-text p {
+    margin-bottom: 15px;
+
+    color: #555;
+}
+
+
+.content-image {
+    flex: 1;
+}
+
+
+.content-image img {
+    width: 100%;
+
+    display: block;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    padding: 70px 30px;
+
+    text-align: center;
+
+    background: #ecf0f1;
+}
+
+
+.services h2 {
+    font-size: 32px;
+
+    color: #2c3e50;
+
+    margin-bottom: 40px;
+}
+
+
+.service-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.service-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.service-card h3 {
+    color: #1abc9c;
+
+    margin-bottom: 15px;
+}
+
+
+.service-card p {
+    color: #666;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background: white;
+}
+
+
+.contact h2 {
+    font-size: 30px;
+
+    color: #2c3e50;
+
+    margin-bottom: 20px;
+}
+
+
+.contact p {
+    margin: 8px 0;
+
+    color: #555;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #2c3e50;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+
+
+    .navbar li a {
+        padding: 8px 12px;
+
+        font-size: 14px;
+    }
+
+
+    .content {
+        flex-direction: column;
+
+        padding: 50px 20px;
+    }
+
+
+    .content-text,
+    .content-image {
+        width: 100%;
+    }
+
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+}
