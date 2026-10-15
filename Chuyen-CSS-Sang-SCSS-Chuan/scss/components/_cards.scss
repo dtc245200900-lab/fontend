@@ -1,0 +1,10 @@
+// Thành phần thẻ
+.card {
+  border: 1px solid $border-color;
+  padding: 20px;
+  @include box-shadow;
+
+  h2 {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,8 @@
+// Thành phần nút
+.button {
+  @include button-style($primary-color);
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}

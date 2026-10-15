@@ -1,0 +1,9 @@
+// Điểm vào chính của SCSS.
+// @use là cách nạp module hiện đại của Sass.
+// Các partial bên dưới dùng biến/mixin từ abstracts.
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+@use "base/global";
+@use "layout/container";
+@use "components/buttons";
+@use "components/cards";

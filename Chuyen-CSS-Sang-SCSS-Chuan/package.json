@@ -1,0 +1,13 @@
+{
+  "name": "chuyen-css-sang-scss-chuan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Thuc hanh chuyen CSS sang SCSS theo cau truc partials",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css",
+    "watch": "sass --watch scss:css"
+  },
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}

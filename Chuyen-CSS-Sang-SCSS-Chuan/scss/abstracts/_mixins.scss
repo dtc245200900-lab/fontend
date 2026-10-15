@@ -1,0 +1,11 @@
+// Mixin tái sử dụng cho nút và đổ bóng
+@mixin button-style($bg-color) {
+  background: $bg-color;
+  color: $button-text-color;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+@mixin box-shadow {
+  box-shadow: $box-shadow;
+}
