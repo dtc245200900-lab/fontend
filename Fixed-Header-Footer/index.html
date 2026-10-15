@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Header và Fixed Footer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home">MyWebsite</a>
+    <nav aria-label="Menu chính">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main class="main" id="home">
+    <section class="hero">
+      <p class="eyebrow">THỰC HÀNH HTML & CSS</p>
+      <h1>Fixed Header &amp; Fixed Footer</h1>
+      <h2>Cuộn trang để kiểm tra hiệu ứng cố định</h2>
+      <p>Thanh menu phía trên và chân trang phía dưới luôn giữ nguyên vị trí khi bạn cuộn trang.</p>
+      <a class="button" href="#news">Khám phá nội dung ↓</a>
+    </section>
+
+    <section class="content-card" id="news">
+      <span class="section-number">01 / NEWS</span>
+      <h2>Tin tức mới nhất</h2>
+      <p>Đây là phần nội dung minh họa. Bạn có thể thay thế bằng tin tức, bài viết hoặc thông báo của website.</p>
+      <p>Menu trên cùng vẫn hiển thị khi bạn cuộn xuống, giúp người dùng nhanh chóng chuyển đến các mục khác.</p>
+    </section>
+
+    <section class="content-card" id="contact">
+      <span class="section-number">02 / CONTACT</span>
+      <h2>Liên hệ với chúng tôi</h2>
+      <p>Email: hello@example.com</p>
+      <p>Điện thoại: 0123 456 789</p>
+      <p>Đây là thông tin giả lập dùng cho bài thực hành bố cục trang web.</p>
+    </section>
+
+    <section class="content-card" id="about">
+      <span class="section-number">03 / ABOUT</span>
+      <h2>Về chúng tôi</h2>
+      <p>Fixed menu là thanh điều hướng được cố định ở một vị trí trên màn hình ngay cả khi người dùng cuộn trang.</p>
+      <p>Thuộc tính CSS quan trọng là <code>position: fixed</code>, kết hợp với <code>top: 0</code> hoặc <code>bottom: 0</code>.</p>
+    </section>
+
+    <section class="content-card extra">
+      <span class="section-number">04 / MORE CONTENT</span>
+      <h2>Nội dung bổ sung</h2>
+      <p>Phần nội dung dài này tạo thanh cuộn để bạn kiểm tra header và footer cố định.</p>
+      <p>Trong thiết kế thực tế, hãy đảm bảo phần nội dung không bị che khuất bởi header hoặc footer. Vì vậy trang đã có khoảng đệm phía trên và dưới.</p>
+      <div class="sample-grid">
+        <div><strong>position</strong><span>fixed</span></div>
+        <div><strong>top</strong><span>0</span></div>
+        <div><strong>bottom</strong><span>0</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 MyWebsite</span>
+    <span>Thực hành Fixed Header &amp; Footer</span>
+    <a href="#home">Về đầu trang ↑</a>
+  </footer>
+</body>
+</html>
