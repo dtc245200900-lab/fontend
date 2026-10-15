@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trello Digest — Warm & Creative</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #5B2333;
+      --secondary-color: #A44A3F;
+      --accent-color: #E7B65C;
+      --page-bg: #FBF2E9;
+      --surface-color: #FFFFFF;
+      --text-color: #34272A;
+      --muted-color: #6F5B5D;
+      --button-hover: #D49A38;
+    }
+    * { box-sizing: border-box; }
+    body {
+      background: var(--page-bg);
+      color: var(--text-color);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+    }
+    .newsletter { max-width: 760px; margin: 36px auto; background: var(--surface-color); border-radius: 20px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,.10); }
+    .topbar { background: var(--primary-color); color: white; padding: 18px 30px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.35rem; letter-spacing: -.5px; }
+    .brand-mark { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 9px; background: white; color: var(--primary-color); font-weight: 900; }
+    .top-label { font-size: .8rem; opacity: .9; text-transform: uppercase; letter-spacing: 1.4px; }
+    .hero { padding: 44px 36px 38px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; }
+    .hero .eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: .78rem; font-weight: 700; opacity: .9; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; line-height: 1.1; margin: 12px 0 18px; letter-spacing: -1.3px; }
+    .hero p { max-width: 560px; font-size: 1.05rem; margin-bottom: 24px; }
+    .cta { display: inline-block; padding: 12px 20px; background: var(--accent-color); color: #34272A; font-weight: 800; text-decoration: none; border-radius: 9px; transition: transform .2s, background .2s; }
+    .cta:hover { color: #34272A; background: var(--button-hover); transform: translateY(-2px); }
+    .content { padding: 34px 36px; }
+    .section-kicker { color: var(--secondary-color); font-weight: 800; font-size: .78rem; letter-spacing: 1.6px; text-transform: uppercase; }
+    .content h2 { font-weight: 800; letter-spacing: -.5px; margin: 8px 0 12px; }
+    .intro { color: var(--muted-color); }
+    .feature-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 26px 0; }
+    .feature { border: 1px solid rgba(0,0,0,.08); border-radius: 14px; padding: 20px; background: var(--page-bg); }
+    .feature-icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: var(--secondary-color); color: white; font-size: 1.25rem; margin-bottom: 14px; }
+    .feature h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 8px; }
+    .feature p { color: var(--muted-color); font-size: .94rem; margin: 0; }
+    .tip { border-left: 5px solid var(--accent-color); background: var(--page-bg); padding: 18px 20px; border-radius: 0 12px 12px 0; margin: 26px 0; }
+    .tip strong { color: var(--secondary-color); }
+    .footer { background: var(--primary-color); color: white; padding: 25px 36px; }
+    .footer a { color: white; text-decoration: underline; text-underline-offset: 3px; }
+    .footer-small { opacity: .85; font-size: .86rem; }
+    .palette { display: flex; gap: 7px; margin-top: 14px; }
+    .swatch { height: 10px; flex: 1; border-radius: 99px; }
+    @media (max-width: 575px) {
+      .newsletter { margin: 12px; border-radius: 14px; }
+      .topbar { padding: 15px 18px; }
+      .top-label { display: none; }
+      .hero, .content, .footer { padding-left: 22px; padding-right: 22px; }
+      .hero { padding-top: 34px; padding-bottom: 32px; }
+      .feature-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="newsletter">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">T</span><span>Trello<span style="opacity:.75">/</span>Digest</span></div>
+      <span class="top-label">Ý tưởng cho tuần mới</span>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">Bản tin tháng 10 · Số 08</div>
+      <h1>Làm việc thông minh hơn, không vất vả hơn.</h1>
+      <p>Những mẹo nhỏ, quy trình rõ ràng và cảm hứng mới giúp bạn cùng đội nhóm biến kế hoạch thành kết quả.</p>
+      <a class="cta" href="#tips">Khám phá bản tin <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="content">
+      <div class="section-kicker">Xin chào bạn!</div>
+      <h2>Một tuần tốt bắt đầu từ một kế hoạch rõ ràng.</h2>
+      <p class="intro">Khi mọi công việc được tập trung ở một nơi, bạn dễ dàng nhìn thấy điều quan trọng, chia sẻ tiến độ và dành thời gian cho những việc thực sự tạo ra khác biệt.</p>
+
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">✓</div>
+          <h3>Chia nhỏ mục tiêu</h3>
+          <p>Biến công việc lớn thành các bước cụ thể, dễ theo dõi và dễ hoàn thành.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">↗</div>
+          <h3>Cùng nhau tiến lên</h3>
+          <p>Chia sẻ bảng công việc để mọi người biết ai đang làm gì và cần hỗ trợ ở đâu.</p>
+        </article>
+      </div>
+
+      <div class="tip" id="tips">
+        <strong>Mẹo của tuần:</strong>
+        Dành 10 phút đầu ngày để chọn ra ba việc quan trọng nhất. Một danh sách ngắn thường giúp bạn tập trung tốt hơn.
+      </div>
+
+      <h2>Sẵn sàng cho tuần mới?</h2>
+      <p class="intro">Bắt đầu bằng một bảng công việc đơn giản, thêm người đồng hành và cập nhật tiến độ khi bạn hoàn thành từng bước.</p>
+      <a class="cta" href="https://trello.com/">Bắt đầu ngay</a>
+      <div class="palette" aria-label="Bảng màu sử dụng trong thiết kế">
+        <span class="swatch" style="background:var(--primary-color)"></span>
+        <span class="swatch" style="background:var(--secondary-color)"></span>
+        <span class="swatch" style="background:var(--accent-color)"></span>
+        <span class="swatch" style="background:var(--page-bg); border:1px solid #ddd"></span>
+        <span class="swatch" style="background:var(--text-color)"></span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="fw-bold mb-1">Trello Digest</div>
+      <p class="footer-small mb-3">Cảm hứng và công cụ để đội nhóm làm việc hiệu quả hơn.</p>
+      <p class="footer-small mb-0">Bạn nhận được email này vì đã đăng ký nhận bản tin. <a href="#">Hủy đăng ký</a></p>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
