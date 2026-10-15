@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Góc Hoạt Hình - website minh họa giao diện xem hoạt hình trực tuyến.">
+  <title>Góc Hoạt Hình | Xem hoạt hình</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#" aria-label="Góc Hoạt Hình - Trang chủ"><span class="logo-mark">▶</span> Góc Hoạt Hình</a>
+    <nav class="head-link" aria-label="Điều hướng chính">
+      <a class="active" href="#trang-chu">Trang chủ</a>
+      <a href="#danh-sach">Danh sách phim</a>
+      <a href="#gioi-thieu">Giới thiệu</a>
+    </nav>
+    <label class="search-box">
+      <span class="sr-only">Tìm phim</span>
+      <input id="searchInput" type="search" placeholder="Tìm tên phim..." autocomplete="off">
+    </label>
+  </header>
+
+  <div class="page-shell" id="trang-chu">
+    <main class="layout">
+      <aside class="left-content" id="danh-sach">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">THƯ VIỆN</span>
+            <h2>Danh sách phim</h2>
+          </div>
+          <span class="count" id="movieCount">4 phim</span>
+        </div>
+        <label class="sort-label" for="sortSelect">Sắp xếp theo</label>
+        <select id="sortSelect">
+          <option value="newest">Mới cập nhật</option>
+          <option value="views">Nhiều lượt xem</option>
+        </select>
+        <div class="movie-list" id="movieList">
+          <button class="movie-card selected" data-id="forest" type="button">
+            <span class="movie-art art-forest">🌲<span>☀️</span></span>
+            <span class="movie-info"><strong>Khu rừng kỳ diệu</strong><small>Thuyết minh tiếng Việt</small><small>HD · 12 phút</small></span>
+          </button>
+          <button class="movie-card" data-id="space" type="button">
+            <span class="movie-art art-space">🚀<span>✨</span></span>
+            <span class="movie-info"><strong>Phiêu lưu vũ trụ</strong><small>Thuyết minh tiếng Việt</small><small>Full HD · 15 phút</small></span>
+          </button>
+          <button class="movie-card" data-id="ocean" type="button">
+            <span class="movie-art art-ocean">🐳<span>🌊</span></span>
+            <span class="movie-info"><strong>Đại dương xanh</strong><small>Thuyết minh tiếng Việt</small><small>HD · 10 phút</small></span>
+          </button>
+          <button class="movie-card" data-id="friends" type="button">
+            <span class="movie-art art-friends">🐼<span>🍃</span></span>
+            <span class="movie-info"><strong>Những người bạn nhỏ</strong><small>Thuyết minh tiếng Việt</small><small>Full HD · 18 phút</small></span>
+          </button>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>Không tìm thấy phim phù hợp.</p>
+        <div class="safe-note"><span>✓</span><div><strong>Không gian thân thiện</strong><p>Giao diện mẫu không chèn quảng cáo. Hãy chọn nội dung phù hợp với lứa tuổi.</p></div></div>
+      </aside>
+
+      <section class="right-content" aria-label="Khu vực xem phim">
+        <div class="player-heading">
+          <div><span class="eyebrow">ĐANG PHÁT</span><h2 id="playerTitle">Khu rừng kỳ diệu</h2></div>
+          <span class="quality">HD · 720p–1080p</span>
+        </div>
+        <div class="video-frame">
+          <iframe id="videoFrame" src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ?rel=0" title="Video minh họa hoạt hình" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-caption"><span class="status-dot"></span><span id="videoDescription">Video minh họa · Chất lượng phụ thuộc nguồn phát</span></div>
+        <div class="notice"><span class="notice-icon">ⓘ</span><p><strong>Lưu ý:</strong> Đây là bài thực hành giao diện. Video nhúng là video mẫu công khai; website không thể tự bảo đảm phụ đề/thuyết minh tiếng Việt, chất lượng phát hay việc không có quảng cáo từ nhà cung cấp bên ngoài.</p></div>
+        <section class="about" id="gioi-thieu">
+          <span class="eyebrow">VỀ CHÚNG TÔI</span>
+          <h2>Một góc nhỏ dành cho trí tưởng tượng</h2>
+          <p>Khám phá những câu chuyện vui tươi, học hỏi điều mới và cùng nuôi dưỡng trí tưởng tượng qua thế giới hoạt hình.</p>
+          <div class="feature-row"><span>🎨 Nội dung sáng tạo</span><span>📱 Giao diện responsive</span><span>🔎 Tìm kiếm nhanh</span></div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">© 2026 Góc Hoạt Hình · Giao diện phục vụ mục đích học tập HTML và CSS.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
