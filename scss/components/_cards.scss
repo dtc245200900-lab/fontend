@@ -1,0 +1,9 @@
+@use "../abstracts/mixins" as mixins;
+
+.card {
+  @include mixins.box-style;
+
+  p {
+    margin-bottom: 0;
+  }
+}

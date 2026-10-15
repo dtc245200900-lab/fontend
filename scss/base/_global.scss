@@ -1,0 +1,53 @@
+@use "../abstracts/variables" as vars;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: vars.$page-background;
+}
+
+.container {
+  width: min(100% - 32px, vars.$container-width);
+  margin: 0 auto;
+}
+
+.page-header {
+  padding: 42px 0 28px;
+}
+
+.eyebrow {
+  color: vars.$muted-color;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.intro {
+  color: vars.$muted-color;
+  margin-top: 0;
+}
+
+.demo-section {
+  margin: 0 0 vars.$space-large;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: vars.$space-small;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: vars.$space-medium;
+}
+
+.page-footer {
+  padding: 20px 0 36px;
+  color: vars.$muted-color;
+  font-size: 14px;
+}
