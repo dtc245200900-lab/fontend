@@ -1,114 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page - SASS Refactor</title>
-  <link rel="stylesheet" href="css/main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Creative Mind — Book Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#">Code<span>Landing</span></a>
-      <button class="menu-toggle" type="button" aria-label="Mở menu">☰</button>
-      <nav class="navigation" aria-label="Điều hướng chính">
-        <a class="navigation__link navigation__link--active" href="#home">Trang chủ</a>
-        <a class="navigation__link" href="#products">Sản phẩm</a>
-        <a class="navigation__link" href="#statistics">Thống kê</a>
-        <a class="navigation__link" href="#contact">Liên hệ</a>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top book-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Book<span>ly.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Mở điều hướng">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#overview">Giới thiệu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#author">Tác giả</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Nội dung</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Giá sách</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Đánh giá</a></li>
+          <li class="nav-item"><a class="btn btn-brand ms-lg-2" href="#download">Đọc thử miễn phí</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section" id="home">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <p class="eyebrow">MỘT CUỐN SÁCH · NHIỀU Ý TƯỞNG</p>
+          <h1>Khơi mở <span>tư duy sáng tạo</span> của bạn.</h1>
+          <p class="hero-copy">Khám phá cách biến những ý tưởng nhỏ thành thói quen, dự án và thay đổi tích cực trong cuộc sống hằng ngày.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn btn-brand btn-lg" href="#pricing">Chọn phiên bản</a>
+            <a class="btn btn-outline-brand btn-lg" href="#overview">Tìm hiểu sách</a>
+          </div>
+          <div class="hero-proof"><span class="proof-stars">★★★★★</span><span>Được yêu thích bởi độc giả ham học hỏi</span></div>
+        </div>
+        <div class="col-lg-6">
+          <div class="book-stage">
+            <div class="book-glow"></div>
+            <div class="book-cover" role="img" aria-label="Bìa sách The Creative Mind">
+              <div class="cover-top">A PRACTICAL GUIDE</div>
+              <div class="cover-art"><span></span><span></span><span></span></div>
+              <h2>THE<br>CREATIVE<br>MIND</h2>
+              <p>IDEAS INTO ACTION</p>
+              <div class="cover-author">ALEX MORGAN</div>
+            </div>
+            <div class="floating-note floating-note--one">✦ 12 chương thực hành</div>
+            <div class="floating-note floating-note--two">Đọc · Thử · Sáng tạo</div>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <p class="eyebrow">GIẢI PHÁP SỐ HÓA</p>
-          <h1>Xây dựng trải nghiệm số <span>ấn tượng</span></h1>
-          <p class="hero__description">Một giao diện landing page mẫu với cấu trúc SCSS rõ ràng, dễ bảo trì và tái sử dụng.</p>
-          <a class="button button--primary" href="#products">Khám phá sản phẩm</a>
-        </div>
-        <div class="hero__visual" aria-hidden="true">
-          <div class="visual-card visual-card--large"><span>01</span><strong>Thiết kế hiện đại</strong></div>
-          <div class="visual-card visual-card--small"><span>02</span><strong>Tối ưu hiệu quả</strong></div>
-          <div class="visual-orb"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="products section" id="products">
+  <main>
+    <section class="section-padding" id="overview">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">GIẢI PHÁP NỔI BẬT</p>
-          <h2>Sản phẩm dành cho bạn</h2>
-          <p>Những tính năng thiết thực giúp công việc của bạn đơn giản hơn.</p>
-        </div>
-        <div class="product-grid">
-          <article class="product-card">
-            <div class="product-card__icon">✦</div>
-            <h3>Thiết kế giao diện</h3>
-            <p>Giao diện trực quan, đồng nhất và dễ sử dụng trên nhiều thiết bị.</p>
-            <a href="#contact">Tìm hiểu thêm →</a>
-          </article>
-          <article class="product-card">
-            <div class="product-card__icon product-card__icon--blue">⌘</div>
-            <h3>Tự động hóa</h3>
-            <p>Đơn giản hóa quy trình và tiết kiệm thời gian cho công việc hằng ngày.</p>
-            <a href="#contact">Tìm hiểu thêm →</a>
-          </article>
-          <article class="product-card">
-            <div class="product-card__icon product-card__icon--orange">↗</div>
-            <h3>Phân tích dữ liệu</h3>
-            <p>Trực quan hóa dữ liệu để hỗ trợ theo dõi và ra quyết định.</p>
-            <a href="#contact">Tìm hiểu thêm →</a>
-          </article>
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-5">
+            <div class="overview-art">
+              <div class="quote-mark">“</div>
+              <p>Small ideas can create meaningful change.</p>
+              <span>THE CREATIVE MIND</span>
+            </div>
+          </div>
+          <div class="col-lg-7 ps-lg-5">
+            <p class="eyebrow">BOOK OVERVIEW</p>
+            <h2 class="section-title">Không chỉ đọc sách.<br><span>Bắt đầu hành động.</span></h2>
+            <p class="section-copy">The Creative Mind là cuốn sách hướng dẫn người đọc rèn luyện sự tò mò, tìm góc nhìn mới và xây dựng quy trình sáng tạo phù hợp với bản thân.</p>
+            <div class="overview-points">
+              <div><strong>01</strong><span>Ý tưởng được giải thích bằng ví dụ gần gũi.</span></div>
+              <div><strong>02</strong><span>Bài tập ngắn giúp bạn áp dụng ngay sau khi đọc.</span></div>
+              <div><strong>03</strong><span>Phù hợp cho người học, người làm việc và người sáng tạo.</span></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="statistics section" id="statistics">
-      <div class="container statistics__inner">
-        <div class="statistics__intro">
-          <p class="eyebrow">KẾT QUẢ CỦA CHÚNG TÔI</p>
-          <h2>Con số nói lên hiệu quả</h2>
-          <p>Không ngừng cải tiến để mang lại trải nghiệm tốt hơn.</p>
+    <section class="author-section section-padding" id="author">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-md-4 text-center">
+            <div class="author-avatar" aria-label="Minh họa chân dung tác giả">AM</div>
+          </div>
+          <div class="col-md-8">
+            <p class="eyebrow">MEET THE AUTHOR</p>
+            <h2 class="section-title">Alex Morgan</h2>
+            <p class="section-copy">Alex Morgan là cây bút hư cấu chuyên viết về học tập, tư duy thiết kế và phát triển thói quen sáng tạo. Trong cuốn sách này, Alex chia sẻ các phương pháp đơn giản để biến cảm hứng thành hành động thực tế.</p>
+            <div class="author-signature">Alex Morgan</div>
+          </div>
         </div>
-        <div class="stat-grid">
-          <div class="stat"><strong>120+</strong><span>Dự án hoàn thành</span></div>
-          <div class="stat"><strong>98%</strong><span>Khách hàng hài lòng</span></div>
-          <div class="stat"><strong>35+</strong><span>Đối tác đồng hành</span></div>
-          <div class="stat"><strong>24/7</strong><span>Hỗ trợ khách hàng</span></div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="features">
+      <div class="container">
+        <div class="text-center section-heading">
+          <p class="eyebrow">WHAT'S INSIDE</p>
+          <h2 class="section-title">Bạn sẽ khám phá điều gì?</h2>
+          <p class="section-copy mx-auto">Một lộ trình ngắn gọn giúp bạn xây dựng và phát triển ý tưởng từng bước.</p>
         </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-lg-3"><article class="feature-card"><div class="feature-icon">✧</div><h3>Tư duy sáng tạo</h3><p>Học cách quan sát vấn đề từ nhiều góc nhìn.</p></article></div>
+          <div class="col-md-6 col-lg-3"><article class="feature-card"><div class="feature-icon">◎</div><h3>Tập trung mục tiêu</h3><p>Chia mục tiêu lớn thành những bước nhỏ.</p></article></div>
+          <div class="col-md-6 col-lg-3"><article class="feature-card"><div class="feature-icon">↗</div><h3>Thực hành mỗi ngày</h3><p>Biến kiến thức thành thói quen dễ duy trì.</p></article></div>
+          <div class="col-md-6 col-lg-3"><article class="feature-card"><div class="feature-icon">✎</div><h3>Ghi lại ý tưởng</h3><p>Tạo hệ thống lưu trữ và phát triển ý tưởng.</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section section-padding" id="pricing">
+      <div class="container">
+        <div class="text-center section-heading">
+          <p class="eyebrow">CHOOSE YOUR EDITION</p>
+          <h2 class="section-title">Chọn phiên bản phù hợp</h2>
+          <p class="section-copy mx-auto">Giá dưới đây là dữ liệu minh họa cho bài tập giao diện.</p>
+        </div>
+        <div class="row justify-content-center g-4 mt-2">
+          <div class="col-md-6 col-lg-4"><article class="price-card"><p class="price-label">EBOOK</p><h3>Bản điện tử</h3><p class="price"><sup>₫</sup>99.000</p><p class="price-description">Đọc linh hoạt trên thiết bị của bạn.</p><ul><li>Định dạng PDF</li><li>Có thể tìm kiếm nội dung</li><li>Nhận bản cập nhật</li></ul><a href="#download" class="btn btn-outline-brand w-100">Chọn ebook</a></article></div>
+          <div class="col-md-6 col-lg-4"><article class="price-card price-card--featured"><span class="popular-tag">PHỔ BIẾN</span><p class="price-label">PRINT EDITION</p><h3>Bản in</h3><p class="price"><sup>₫</sup>189.000</p><p class="price-description">Trải nghiệm đọc sách truyền thống.</p><ul><li>Bìa mềm chất lượng</li><li>Bố cục dễ ghi chú</li><li>Tặng bookmark</li></ul><a href="#download" class="btn btn-brand w-100">Chọn bản in</a></article></div>
+          <div class="col-md-6 col-lg-4"><article class="price-card"><p class="price-label">BUNDLE</p><h3>Bộ đầy đủ</h3><p class="price"><sup>₫</sup>239.000</p><p class="price-description">Kết hợp bản điện tử và bản in.</p><ul><li>Gồm ebook và bản in</li><li>Bộ worksheet thực hành</li><li>Gợi ý đọc theo tuần</li></ul><a href="#download" class="btn btn-outline-brand w-100">Chọn bộ sách</a></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="download-section section-padding" id="download">
+      <div class="container">
+        <div class="download-panel">
+          <div><p class="eyebrow">START READING TODAY</p><h2>Ý tưởng tiếp theo của bạn bắt đầu từ đây.</h2><p>Nhận chương đọc thử miễn phí và khám phá nội dung cuốn sách.</p></div>
+          <a href="mailto:hello@example.com?subject=Yeu%20cau%20doc%20thu" class="btn btn-light btn-lg">Nhận chương đọc thử ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding reviews-section" id="reviews">
+      <div class="container">
+        <div class="text-center section-heading">
+          <p class="eyebrow">READER'S SAY</p>
+          <h2 class="section-title">Độc giả nói gì?</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4"><figure class="review-card"><div class="review-stars">★★★★★</div><blockquote>“Cách trình bày rõ ràng, giúp mình chia một ý tưởng lớn thành những việc có thể bắt đầu ngay.”</blockquote><figcaption><strong>Minh Anh</strong><span>Độc giả</span></figcaption></figure></div>
+          <div class="col-md-4"><figure class="review-card"><div class="review-stars">★★★★★</div><blockquote>“Những bài tập ngắn rất dễ áp dụng vào việc học và các dự án cá nhân.”</blockquote><figcaption><strong>Hoàng Nam</strong><span>Sinh viên</span></figcaption></figure></div>
+          <div class="col-md-4"><figure class="review-card"><div class="review-stars">★★★★★</div><blockquote>“Một cuốn sách nhẹ nhàng, khuyến khích mình thử nghiệm thay vì chờ đợi cảm hứng.”</blockquote><figcaption><strong>Thu Hà</strong><span>Người yêu sách</span></figcaption></figure></div>
+        </div>
+        <p class="sample-note">Các tên và nhận xét trên là nội dung minh họa phục vụ bài thực hành.</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" id="contact">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a class="logo logo--light" href="#">Code<span>Landing</span></a>
-        <p>Giải pháp số gọn gàng, linh hoạt và hướng đến người dùng.</p>
-      </div>
-      <div class="footer-column">
-        <h3>Khám phá</h3>
-        <a href="#home">Trang chủ</a>
-        <a href="#products">Sản phẩm</a>
-        <a href="#statistics">Thống kê</a>
-      </div>
-      <div class="footer-column">
-        <h3>Hỗ trợ</h3>
-        <a href="#contact">Trung tâm trợ giúp</a>
-        <a href="#contact">Câu hỏi thường gặp</a>
-        <a href="#contact">Liên hệ</a>
-      </div>
-      <div class="footer-column">
-        <h3>Kết nối</h3>
-        <p>Email: hello@example.com</p>
-        <p>Điện thoại: 0123 456 789</p>
-      </div>
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="navbar-brand fw-bold text-white" href="#home">Book<span>ly.</span></a>
+      <p>Mở một cuốn sách. Mở ra một góc nhìn mới.</p>
+      <div class="footer-links"><a href="#overview">Giới thiệu</a><a href="#features">Nội dung</a><a href="#pricing">Giá sách</a><a href="#reviews">Đánh giá</a></div>
     </div>
-    <div class="container footer-bottom">© 2026 CodeLanding. Bài thực hành SASS.</div>
+    <div class="container footer-bottom">© 2026 Bookly. Website tĩnh phục vụ học tập HTML, CSS và Bootstrap.</div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
