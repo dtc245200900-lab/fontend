@@ -1,37 +1,18 @@
-# Bookly — Website giới thiệu sách responsive
-
-Trang web tĩnh giới thiệu một cuốn sách với các phần theo yêu cầu:
-- Header/navigation
-- Book Overview
-- Author
-- Features
-- Prices
-- Download
-- Reader's Say
-- Footer
-
-## Công nghệ
-- HTML5
-- Bootstrap 5.3 qua CDN
-- CSS tùy chỉnh, responsive cho desktop, tablet và mobile
+# Thực hành HTML cơ bản — Vịnh Hạ Long
 
 ## Chạy thử
-Chỉ cần mở `index.html` trong trình duyệt. Cần có kết nối Internet để tải Bootstrap CSS/JS từ CDN.
+Mở `halong_bay.html` bằng trình duyệt. Hình ảnh dùng URL bên ngoài nên cần có kết nối Internet.
 
-## Ghi chú
-Đây là nội dung mẫu phục vụ học tập. Tên sách, tác giả, giá và đánh giá là dữ liệu minh họa, không phải quảng cáo hay đánh giá có thật.
+## Nộp bài
+Đưa file `halong_bay.html` lên GitHub hoặc CodePen rồi nộp link bài làm.
 
-Mã nguồn tham khảo từ đề bài: https://github.com/hoanv7169/bootstrap-demo
-
-## Đẩy lên GitHub
-1. Tạo repository mới trên GitHub.
-2. Mở terminal trong thư mục dự án và chạy:
+Ví dụ lệnh Git:
 ```bash
 git init
-git add .
-git commit -m "Create responsive book landing page with Bootstrap"
+git add halong_bay.html README.md
+git commit -m "Create Ha Long Bay HTML page"
 git branch -M main
 git remote add origin https://github.com/TEN_TAI_KHOAN/TEN_REPOSITORY.git
 git push -u origin main
 ```
-Thay URL mẫu bằng URL repository của bạn. Nếu đã cấu hình `origin`, không chạy lại `git remote add origin`.
+Thay URL mẫu bằng URL repository thực tế của bạn.
