@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thực hành tạo menu dọc Dropdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>Menu Dropdown Dọc</h1>
+    <p>Di chuột vào các mục có mũi tên để mở menu con.</p>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <h2>Danh mục</h2>
+      <div id="menu">
+        <ul class="menu-list">
+          <li><a href="#home">Trang chủ</a></li>
+          <li>
+            <a href="#courses">Khóa học <span class="arrow">›</span></a>
+            <ul>
+              <li><a href="#html">HTML &amp; CSS</a></li>
+              <li><a href="#javascript">JavaScript</a></li>
+              <li>
+                <a href="#backend">Backend <span class="arrow">›</span></a>
+                <ul>
+                  <li><a href="#nodejs">Node.js</a></li>
+                  <li><a href="#python">Python</a></li>
+                  <li><a href="#java">Java</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#resources">Tài nguyên <span class="arrow">›</span></a>
+            <ul>
+              <li><a href="#documents">Tài liệu</a></li>
+              <li><a href="#exercises">Bài tập</a></li>
+              <li><a href="#videos">Video hướng dẫn</a></li>
+            </ul>
+          </li>
+          <li><a href="#news">Tin tức</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="content">
+      <span class="eyebrow">HTML + CSS</span>
+      <h2>Thực hành menu dọc nhiều cấp</h2>
+      <p>Menu con được ẩn mặc định bằng <code>visibility: hidden</code>. Khi di chuột vào mục cha, bộ chọn <code>:hover</code> sẽ hiển thị menu con tương ứng.</p>
+      <div class="info-grid">
+        <article class="info-card">
+          <span class="icon">01</span>
+          <h3>Menu dọc</h3>
+          <p>Các mục chính được xếp theo chiều dọc, nền tối và chữ sáng.</p>
+        </article>
+        <article class="info-card">
+          <span class="icon">02</span>
+          <h3>Menu con</h3>
+          <p>Menu con xuất hiện bên cạnh mục cha khi rê chuột vào.</p>
+        </article>
+        <article class="info-card">
+          <span class="icon">03</span>
+          <h3>Nhiều cấp</h3>
+          <p>Mục Backend có thêm một cấp menu con để minh họa menu lồng nhau.</p>
+        </article>
+      </div>
+      <div class="tip">
+        <strong>Mẹo kiểm tra:</strong> Rê chuột vào “Khóa học” → “Backend” để xem menu ba cấp. Trên điện thoại, có thể dùng menu như một bản minh họa; bài này ưu tiên thao tác hover theo yêu cầu.
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Bài thực hành HTML &amp; CSS</span>
+    <a href="#home">Về đầu trang ↑</a>
+  </footer>
+</body>
+</html>
