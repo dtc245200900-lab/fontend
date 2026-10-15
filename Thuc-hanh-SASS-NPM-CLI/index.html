@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thực hành SASS CLI</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/extra.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Thực hành SASS CLI</h1>
+    <p>Biên dịch SCSS thành CSS bằng npm và Sass CLI</p>
+  </header>
+
+  <main class="container">
+    <h2>Chào mừng bạn!</h2>
+    <p>Trang này dùng CSS được biên dịch từ SCSS. Hãy thay đổi màu trong <code>scss/_variables.scss</code>, sau đó chạy chế độ watch để quan sát kết quả.</p>
+    <button class="button" type="button" onclick="document.getElementById('message').textContent='Bạn đã kiểm tra giao diện SASS thành công!'">Kiểm tra giao diện</button>
+
+    <div class="demo-grid">
+      <section class="demo-card">
+        <h3>Biến SCSS</h3>
+        <p>Dùng biến để quản lý màu sắc và tái sử dụng trong nhiều quy tắc.</p>
+      </section>
+      <section class="demo-card">
+        <h3>Nesting</h3>
+        <p>Lồng các bộ chọn giúp nhóm quy tắc liên quan dễ đọc hơn.</p>
+      </section>
+    </div>
+
+    <p class="notice" id="message">Sẵn sàng thực hành biên dịch và theo dõi SCSS.</p>
+  </main>
+</body>
+</html>

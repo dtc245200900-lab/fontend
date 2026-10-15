@@ -1,0 +1,11 @@
+// File SCSS phụ để minh họa biên dịch nhiều tệp
+$notice-bg: #eefaf3;
+
+.notice {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-left: 4px solid #2c9b69;
+  border-radius: 8px;
+  background: $notice-bg;
+  color: #206747;
+}

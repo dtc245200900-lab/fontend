@@ -1,0 +1,13 @@
+{
+  "name": "thuc-hanh-sass-cli",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bai thuc hanh Sass npm va CLI",
+  "scripts": {
+    "sass": "sass scss/styles.scss css/styles.css && sass scss/extra.scss css/extra.css",
+    "watch": "sass --watch scss:css"
+  },
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
