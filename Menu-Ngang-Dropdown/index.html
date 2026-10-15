@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thực hành tạo menu ngang Dropdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Website thực hành CSS</h1>
+    <p>Ví dụ menu ngang có danh sách thả xuống</p>
+  </header>
+
+  <nav id="menu" aria-label="Menu chính">
+    <ul class="menu-root">
+      <li><a href="#">Trang chủ</a></li>
+      <li>
+        <a href="#">Khóa học</a>
+        <ul>
+          <li><a href="#">HTML và CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li>
+            <a href="#">Lập trình Backend ▸</a>
+            <ul>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C#</a></li>
+              <li><a href="#">Node.js</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Tài liệu</a>
+        <ul>
+          <li><a href="#">Bài đọc</a></li>
+          <li><a href="#">Bài thực hành</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Giới thiệu</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h2>Menu ngang Dropdown</h2>
+    <p>Di chuột vào mục <strong>Khóa học</strong> hoặc <strong>Tài liệu</strong> để xem menu con.</p>
+    <p>Ở mục <strong>Lập trình Backend</strong>, menu cấp hai sẽ mở sang bên cạnh.</p>
+  </main>
+</body>
+</html>

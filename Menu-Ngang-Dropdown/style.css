@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #f4f6f8;
+}
+
+.site-header {
+  padding: 24px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.site-header h1 {
+  margin: 0 0 8px;
+  color: #263746;
+}
+
+.site-header p {
+  margin: 0;
+  color: #5f6b75;
+}
+
+/* Menu ngang */
+#menu {
+  height: 46px;
+  background: #263746;
+  border-top: 3px solid #e34b4b;
+  z-index: 10;
+}
+
+#menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#menu .menu-root {
+  display: flex;
+  height: 43px;
+}
+
+#menu li {
+  position: relative;
+}
+
+#menu a {
+  display: block;
+  width: 150px;
+  min-height: 43px;
+  padding: 13px 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  white-space: nowrap;
+}
+
+#menu a:hover,
+#menu a:focus {
+  background: #e53935;
+  outline: none;
+}
+
+/* Menu con được đặt bên dưới mục cha và ẩn mặc định */
+#menu ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background: #263746;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+/* Mở menu con khi rê chuột hoặc dùng bàn phím */
+#menu li:hover > ul,
+#menu li:focus-within > ul {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Cấp menu tiếp theo mở sang bên phải */
+#menu ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
+#menu ul ul a {
+  width: 190px;
+}
+
+.content {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 26px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  line-height: 1.7;
+}
+
+.content h2 {
+  margin-top: 0;
+  color: #263746;
+}
+
+@media (max-width: 700px) {
+  #menu {
+    height: auto;
+  }
+
+  #menu .menu-root {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  #menu a {
+    width: 135px;
+  }
+
+  .content {
+    margin: 20px 12px;
+  }
+}
