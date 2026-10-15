@@ -1,2 +1,9 @@
-@use "base/global";
-@use "layout/grid";
+@use "base/reset";
+@use "layout/container";
+@use "components/header";
+@use "components/buttons";
+@use "sections/hero";
+@use "sections/products";
+@use "sections/statistics";
+@use "components/footer";
+@use "responsive";

@@ -1,0 +1,31 @@
+@use "../abstracts/mixins" as mixins;
+
+.container {
+  @include mixins.container;
+}
+
+.section {
+  @include mixins.section-space;
+}
+
+.section-heading {
+  max-width: 650px;
+  margin: 0 auto 42px;
+  text-align: center;
+
+  h2 {
+    margin: 4px 0 12px;
+  }
+
+  p:last-child {
+    color: #6d7185;
+  }
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #635bff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}

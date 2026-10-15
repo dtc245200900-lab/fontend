@@ -3,41 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thực hành SASS Variables & Mixins</title>
+  <title>Landing Page - SASS Refactor</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <main class="container">
-    <header class="page-header">
-      <p class="eyebrow">CODEGYM · SASS PRACTICE</p>
-      <h1>Tối ưu CSS với SASS</h1>
-      <p class="intro">Sử dụng variables và mixins để giao diện dễ quản lý, tái sử dụng.</p>
-    </header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Code<span>Landing</span></a>
+      <button class="menu-toggle" type="button" aria-label="Mở menu">☰</button>
+      <nav class="navigation" aria-label="Điều hướng chính">
+        <a class="navigation__link navigation__link--active" href="#home">Trang chủ</a>
+        <a class="navigation__link" href="#products">Sản phẩm</a>
+        <a class="navigation__link" href="#statistics">Thống kê</a>
+        <a class="navigation__link" href="#contact">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="demo-section">
-      <h2>Nút thao tác</h2>
-      <p>Kiểu nút được tạo bằng mixin <code>button-style</code>.</p>
-      <div class="button-row">
-        <button class="button" type="button">Nút chính</button>
-        <button class="button button--blue" type="button">Nút xanh</button>
+  <main id="home">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">GIẢI PHÁP SỐ HÓA</p>
+          <h1>Xây dựng trải nghiệm số <span>ấn tượng</span></h1>
+          <p class="hero__description">Một giao diện landing page mẫu với cấu trúc SCSS rõ ràng, dễ bảo trì và tái sử dụng.</p>
+          <a class="button button--primary" href="#products">Khám phá sản phẩm</a>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="visual-card visual-card--large"><span>01</span><strong>Thiết kế hiện đại</strong></div>
+          <div class="visual-card visual-card--small"><span>02</span><strong>Tối ưu hiệu quả</strong></div>
+          <div class="visual-orb"></div>
+        </div>
       </div>
     </section>
 
-    <section class="demo-section">
-      <h2>Thẻ nội dung</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Thẻ thứ nhất</h3>
-          <p>Card dùng chung mixin để quản lý nền, khoảng cách, bo góc và đổ bóng.</p>
-        </article>
-        <article class="card">
-          <h3>Thẻ thứ hai</h3>
-          <p>Thay đổi biến hoặc mixin giúp cập nhật giao diện đồng nhất hơn.</p>
-        </article>
+    <section class="products section" id="products">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">GIẢI PHÁP NỔI BẬT</p>
+          <h2>Sản phẩm dành cho bạn</h2>
+          <p>Những tính năng thiết thực giúp công việc của bạn đơn giản hơn.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__icon">✦</div>
+            <h3>Thiết kế giao diện</h3>
+            <p>Giao diện trực quan, đồng nhất và dễ sử dụng trên nhiều thiết bị.</p>
+            <a href="#contact">Tìm hiểu thêm →</a>
+          </article>
+          <article class="product-card">
+            <div class="product-card__icon product-card__icon--blue">⌘</div>
+            <h3>Tự động hóa</h3>
+            <p>Đơn giản hóa quy trình và tiết kiệm thời gian cho công việc hằng ngày.</p>
+            <a href="#contact">Tìm hiểu thêm →</a>
+          </article>
+          <article class="product-card">
+            <div class="product-card__icon product-card__icon--orange">↗</div>
+            <h3>Phân tích dữ liệu</h3>
+            <p>Trực quan hóa dữ liệu để hỗ trợ theo dõi và ra quyết định.</p>
+            <a href="#contact">Tìm hiểu thêm →</a>
+          </article>
+        </div>
       </div>
     </section>
 
-    <footer class="page-footer">Bài thực hành: SASS Variables & Mixins</footer>
+    <section class="statistics section" id="statistics">
+      <div class="container statistics__inner">
+        <div class="statistics__intro">
+          <p class="eyebrow">KẾT QUẢ CỦA CHÚNG TÔI</p>
+          <h2>Con số nói lên hiệu quả</h2>
+          <p>Không ngừng cải tiến để mang lại trải nghiệm tốt hơn.</p>
+        </div>
+        <div class="stat-grid">
+          <div class="stat"><strong>120+</strong><span>Dự án hoàn thành</span></div>
+          <div class="stat"><strong>98%</strong><span>Khách hàng hài lòng</span></div>
+          <div class="stat"><strong>35+</strong><span>Đối tác đồng hành</span></div>
+          <div class="stat"><strong>24/7</strong><span>Hỗ trợ khách hàng</span></div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo logo--light" href="#">Code<span>Landing</span></a>
+        <p>Giải pháp số gọn gàng, linh hoạt và hướng đến người dùng.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Khám phá</h3>
+        <a href="#home">Trang chủ</a>
+        <a href="#products">Sản phẩm</a>
+        <a href="#statistics">Thống kê</a>
+      </div>
+      <div class="footer-column">
+        <h3>Hỗ trợ</h3>
+        <a href="#contact">Trung tâm trợ giúp</a>
+        <a href="#contact">Câu hỏi thường gặp</a>
+        <a href="#contact">Liên hệ</a>
+      </div>
+      <div class="footer-column">
+        <h3>Kết nối</h3>
+        <p>Email: hello@example.com</p>
+        <p>Điện thoại: 0123 456 789</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 CodeLanding. Bài thực hành SASS.</div>
+  </footer>
 </body>
 </html>

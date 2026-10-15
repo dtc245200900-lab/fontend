@@ -1,0 +1,73 @@
+@use "abstracts/mixins" as mixins;
+@use "abstracts/variables" as vars;
+
+@include mixins.respond-to(tablet) {
+  .hero__inner {
+    gap: 24px;
+  }
+
+  .hero__content h1 {
+    font-size: 34px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .statistics__inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@include mixins.respond-to(mobile) {
+  .header-inner {
+    min-height: 68px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .hero__inner {
+    flex-direction: column;
+    align-items: stretch;
+    padding-block: 48px;
+  }
+
+  .hero__content h1 {
+    font-size: 32px;
+  }
+
+  .hero__visual {
+    min-height: 280px;
+  }
+
+  .visual-card--large {
+    left: 0;
+    width: 230px;
+  }
+
+  .visual-card--small {
+    right: 0;
+    width: 200px;
+  }
+
+  .product-grid,
+  .stat-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding-block: 48px;
+  }
+}

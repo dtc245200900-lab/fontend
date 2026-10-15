@@ -1,0 +1,81 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+.hero {
+  overflow: hidden;
+  background: linear-gradient(120deg, #f7f8ff 0%, #fff 72%);
+
+  &__inner {
+    @include mixins.flex-between(48px);
+    min-height: 490px;
+    padding-block: 64px;
+  }
+
+  &__content {
+    flex: 1;
+    max-width: 570px;
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: vars.$font-size-heading;
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+
+      span {
+        color: vars.$color-primary;
+      }
+    }
+  }
+
+  &__description {
+    max-width: 510px;
+    margin: 0 0 28px;
+    color: vars.$color-muted;
+  }
+
+  &__visual {
+    position: relative;
+    display: grid;
+    flex: 1;
+    min-height: 320px;
+    place-items: center;
+  }
+}
+
+.visual-card {
+  @include mixins.card-surface;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 26px;
+
+  span {
+    color: vars.$color-primary;
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  &--large {
+    top: 30px;
+    left: 10%;
+    width: 270px;
+    height: 170px;
+  }
+
+  &--small {
+    right: 4%;
+    bottom: 24px;
+    width: 230px;
+    height: 130px;
+  }
+}
+
+.visual-orb {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dcd9ff, #f1efff);
+}

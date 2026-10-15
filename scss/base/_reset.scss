@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as vars;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: vars.$color-text;
+  background: vars.$color-white;
+  font-family: vars.$font-family-base;
+  font-size: vars.$font-size-base;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
