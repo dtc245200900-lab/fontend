@@ -1,0 +1,82 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+.gridwrapper {
+  @include mixins.grid-wrapper;
+}
+
+.gridwrapper--header {
+  height: vars.$header-height;
+}
+
+.gridwrapper--main {
+  height: vars.$main-height;
+}
+
+.gridwrapper--footer {
+  height: vars.$footer-height;
+}
+
+.gridcontent {
+  @include mixins.grid-column;
+}
+
+.gridcontent--top {
+  @include mixins.full-width-band(vars.$color-top);
+}
+
+.gridcontent--bottom {
+  @include mixins.full-width-band(vars.$color-bottom);
+}
+
+.gridcontent--sidebar,
+.gridcontent--right {
+  width: vars.$sidebar-width;
+  padding-top: vars.$sidebar-padding-top;
+  background: vars.$color-white;
+  border: none;
+}
+
+.gridcontent--empty {
+  background: vars.$color-white;
+  border: none;
+}
+
+.gridcontent--right {
+  width: vars.$right-column-width;
+}
+
+.sidebar-block {
+  width: 100%;
+  height: 15%;
+  margin-bottom: vars.$block-gap;
+  background: vars.$color-block;
+}
+
+.right-block {
+  width: 100%;
+  height: 92%;
+  background: vars.$color-block;
+}
+
+.gridcontainer--guides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.gridwrapper--guide {
+  height: vars.$guide-height;
+}
+
+.gridcontent--guide {
+  background: vars.$color-white;
+  border-right: 1px solid vars.$color-guide-border;
+}
+
+.gridcontent--guide:first-child {
+  border-left: 1px solid vars.$color-guide-border;
+}

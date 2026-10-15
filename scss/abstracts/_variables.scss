@@ -1,21 +1,21 @@
-$primary-color: red;
-$secondary-color: #1677d2;
-$text-color: #222;
-$muted-color: #666;
-$surface-color: #fff;
-$page-background: #f5f6f8;
+// Các giá trị dùng chung được tách thành biến SASS.
+$grid-column-width: 8.333333%;
+$grid-height: 250px;
+$grid-border-color: grey;
 
-$font-large: 32px;
-$font-medium: 28px;
-$font-body: 16px;
+$color-top: #9933cc;
+$color-bottom: #0099cc;
+$color-block: #33b5e5;
+$color-grid-background: #f1f1f1;
+$color-white: #fff;
+$color-guide-border: #000;
 
-$padding-standard: 10px 20px;
-$card-padding: 15px;
-$button-radius: 5px;
-$card-radius: 10px;
-$box-shadow-default: 2px 2px 10px rgba(0, 0, 0, 0.1);
+$header-height: 90px;
+$main-height: 230px;
+$footer-height: 50px;
+$guide-height: 370px;
 
-$container-width: 960px;
-$space-small: 8px;
-$space-medium: 16px;
-$space-large: 28px;
+$sidebar-width: 25%;
+$right-column-width: 25%;
+$block-gap: 10px;
+$sidebar-padding-top: 15px;
